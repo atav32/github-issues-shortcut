@@ -1,0 +1,15 @@
+{
+    "version": "0.1",
+    "icons": {
+        "128": "icon.png",
+        "48": "icon.png",
+        "16": "icon.png"
+    },
+    "manifest_version": 2,
+    "name": "GitHub Issues",
+    "permissions": ["http://*/*", "https://*/*"],
+    "content_scripts": [{
+        "matches": ["http://github.com/*", "https://github.com/*"],
+        "js": ["github-issues-button.js"]
+    }]
+}
